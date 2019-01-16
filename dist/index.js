@@ -30,14 +30,26 @@ var PersonSchema = new _mongoose.Schema({
 //第二个参数：架构Schema
 //返回值：返回模型构造函数
 
-var User = _mongoose.default.model('User', PersonSchema); //4.当我们有了模型构造函数之后，就可以使用这个构造函数对users表中的数据为所欲为了
-//*********************新增数据
+var User = _mongoose.default.model('User', PersonSchema); //
+// //4.当我们有了模型构造函数之后，就可以使用这个构造函数对users表中的数据为所欲为了
+//
+// //*********************新增数据
 
 
 var admin = new User({
-  username: '王彬彬'
+  username: '王彬彬',
+  age: 21
 });
 admin.save().then(function () {
   console.log('保存成功');
+}).catch(function (err) {
+  console.log("保存失败");
 }); //*********************查询数据
+
+User.find({
+  username: '王彬彬',
+  age: 21
+}, function (err, arr) {
+  console.log(arr[0]._id);
+}); //打印查询数据
 //# sourceMappingURL=index.js.map
