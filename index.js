@@ -31,10 +31,14 @@ const User = mongoose.model('User', PersonSchema);
 //      console.log("保存失败");
 // });
 //*********************查询数据
-User.find({username: '王彬彬', age: 21}, (err, arr) => {
-    console.log(arr[0]._id);
+User.find({username: '王彬彬'}, (err, arr) => {
+    console.log(arr);
 });
 //打印查询数据
+//********************更新数据
+// User.where({ username: '王彬彬' }).updateOne({ age: 28 },(err,data)=>{
+//     console.log(data);
+// })
 
 
 

@@ -42,9 +42,12 @@ var User = _mongoose.default.model('User', PersonSchema); //
 
 
 User.find({
-  username: '王彬彬',
-  age: 21
+  username: '王彬彬'
 }, function (err, arr) {
-  console.log(arr[0]._id);
+  console.log(arr);
 }); //打印查询数据
+//********************更新数据
+// User.where({ username: '王彬彬' }).updateOne({ age: 28 },(err,data)=>{
+//     console.log(data);
+// })
 //# sourceMappingURL=index.js.map
