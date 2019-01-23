@@ -39,9 +39,9 @@ const User = mongoose.model('User', PersonSchema);
 // User.where({ username: '王彬彬' }).updateOne({ age: 28 },(err,data)=>{
 //     console.log(data);
 // })
-User.deleteOne({username:'王彬彬'},(err,msg) =>{
-    console.log(err)
-})
+User.deleteOne({username:'王彬彬'},(err,msg) => {
+    console.log(err);
+});
 
 
 
