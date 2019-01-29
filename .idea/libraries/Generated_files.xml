@@ -3,12 +3,14 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/dist/.eslintrc.js" />
+        <item url="file://$PROJECT_DIR$/dist/CreateUserAboutSecuritySet.js" />
         <item url="file://$PROJECT_DIR$/dist/Schema.js" />
         <item url="file://$PROJECT_DIR$/dist/index.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/dist/.eslintrc.js" />
+      <root url="file://$PROJECT_DIR$/dist/CreateUserAboutSecuritySet.js" />
       <root url="file://$PROJECT_DIR$/dist/Schema.js" />
       <root url="file://$PROJECT_DIR$/dist/index.js" />
     </CLASSES>
